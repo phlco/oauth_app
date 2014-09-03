@@ -1,0 +1,6 @@
+<h1>Login with Google's OAuth</h1>
+<% if session[:access_token].nil? %>
+  <a href="<%= @url %>">Login</a>
+<% else %>
+  <a href="/logout">Logout</a>
+<% end %>
