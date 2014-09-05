@@ -1,5 +1,5 @@
+require 'sinatra/base'
 require 'httparty'
-require 'pry'
 
 class App < Sinatra::Base
 
