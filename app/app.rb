@@ -47,6 +47,7 @@ class App < Sinatra::Base
   # google oauth
   get('/oauth_callback') do
     code = params[:code]
+    # fake code to fix stuff
     # send code back
     response = HTTParty.post(
       "https://accounts.google.com/o/oauth2/token",
